@@ -32,30 +32,7 @@
 
 <https://unpkg.com/tsparticles-preset-big-circles/>
 
----
 
-## React.js/Preact/Inferno/Vue (2.x|3.x)/Angular/Svelte
-### **_npm_**
-
-*tsparticles-preset-big-circles*
-
-[![npm](https://img.shields.io/npm/v/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles) [![npmjs](https://img.shields.io/npm/dt/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles)
-
-```shell
-npm install tsparticles-preset-big-circles
-```
-
-### **_yarn_**
-
-```shell
-yarn add tsparticles-preset-big-circles
-```
-
-### **_pnpm_**
-
-```shell
-pnpm install tsparticles-preset-big-circles
-```
 
 ## CDN / Vanilla JS / jQuery
 
@@ -130,6 +107,31 @@ tsParticles.load("tsparticles", {
 ```
 
 Like in the sample above, the circles will be replaced by squares.
+
+---
+
+## React.js/Preact/Inferno/Vue (2.x|3.x)/Angular/Svelte
+### **_npm_**
+
+*tsparticles-preset-big-circles*
+
+[![npm](https://img.shields.io/npm/v/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles) [![npmjs](https://img.shields.io/npm/dt/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles)
+
+```shell
+npm install tsparticles-preset-big-circles
+```
+
+### **_yarn_**
+
+```shell
+yarn add tsparticles-preset-big-circles
+```
+
+### **_pnpm_**
+
+```shell
+pnpm install tsparticles-preset-big-circles
+```
 
 ### React.js / Preact / Inferno
 
