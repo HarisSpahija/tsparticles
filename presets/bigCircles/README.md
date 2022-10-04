@@ -32,7 +32,7 @@
 
 <https://unpkg.com/tsparticles-preset-big-circles/>
 
-
+## How to use it
 
 ## CDN / Vanilla JS / jQuery
 
@@ -61,9 +61,6 @@ A bundled script can also be used, this will include every needed plugin needed 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-big-circles@2/tsparticles.preset.bigCircles.bundle.min.js"></script>
 ```
-
-
-## How to use it
 
 ### Import
 
