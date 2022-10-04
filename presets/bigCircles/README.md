@@ -14,9 +14,50 @@
 
 [![demo](https://raw.githubusercontent.com/matteobruni/tsparticles/main/presets/bigCircles/images/sample.png)](https://particles.js.org/samples/presets/bigCircles)
 
-## How to use it
+## **_Preset installation_**
 
-### CDN / Vanilla JS / jQuery
+### **_Hosting / CDN_**
+
+**_Please use these hosts or your own to load tsParticles on your projects_**
+
+#### jsDelivr
+
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/tsparticles-preset-big-circles/badge)](https://www.jsdelivr.com/package/npm/tsparticles-preset-big-circles)
+
+#### cdnjs
+
+[![Cdnjs](https://img.shields.io/cdnjs/v/tsparticles-preset-big-circles)](https://cdnjs.com/libraries/tsparticles-preset-big-circles)
+
+#### unpkg
+
+<https://unpkg.com/tsparticles-preset-big-circles/>
+
+---
+
+## React.js/Preact/Inferno/Vue (2.x|3.x)/Angular/Svelte
+### **_npm_**
+
+*tsparticles-preset-big-circles*
+
+[![npm](https://img.shields.io/npm/v/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles) [![npmjs](https://img.shields.io/npm/dt/tsparticles-preset-big-circles?style=for-the-badge)](https://www.npmjs.com/package/tsparticles-preset-big-circles)
+
+```shell
+npm install tsparticles-preset-big-circles
+```
+
+### **_yarn_**
+
+```shell
+yarn add tsparticles-preset-big-circles
+```
+
+### **_pnpm_**
+
+```shell
+pnpm install tsparticles-preset-big-circles
+```
+
+## CDN / Vanilla JS / jQuery
 
 The first step is installing [tsParticles](https://github.com/matteobruni/tsparticles) following the instructions for
 vanilla javascript in the main project [here](https://github.com/matteobruni/tsparticles)
@@ -44,6 +85,20 @@ A bundled script can also be used, this will include every needed plugin needed 
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-big-circles@2/tsparticles.preset.bigCircles.bundle.min.js"></script>
 ```
 
+
+## How to use it
+
+### Import
+
+Import the preset module like so:
+
+```javascript
+const loadBigCirclesPreset = require("tsparticles-engine");
+
+// or
+
+import { loadBigCirclesPreset } from "tsparticles-preset-big-circles";
+```
 ### Usage
 
 Once the scripts are loaded you can set up `tsParticles` like this:
@@ -106,13 +161,20 @@ export class ParticlesContainer extends React.PureComponent<IProps> {
 
 ### Vue (2.x and 3.x)
 
-_The syntax for `Vue.js 2.x` and `3.x` is the same_
+_The syntax for `Vue.js 2.x` and `3.x` is the same apart form the `vue2-particles` or `vue3-particles` library import_
 
 ```vue
 <Particles id="tsparticles" :particlesInit="particlesInit" :options="particlesOptions" />
 ```
 
 ```ts
+import Particles from "vue2-particles";
+// or
+import Particles from "vue3-particles";
+
+import type { Engine } from "tsparticles-engine";
+import { loadBigCirclesPreset } from "tsparticles-preset-big-circles";
+
 const particlesOptions = {
   preset: "bigCircles", // also "big-circles" is accepted
 };
@@ -129,6 +191,10 @@ async function particlesInit(engine: Engine): Promise<void> {
 ```
 
 ```ts
+import Particles from "ng-particles";
+import type { Engine } from "tsparticles-engine";
+import { loadBigCirclesPreset } from "tsparticles-preset-big-circles";
+
 const particlesOptions = {
   preset: "bigCircles", // also "big-circles" is accepted
 };
@@ -150,6 +216,9 @@ async function particlesInit(engine: Engine): Promise<void> {
 ```
 
 ```js
+import Particles from "svelte-particles";
+import { loadBigCirclesPreset } from "tsparticles-preset-big-circles";
+
 let particlesOptions = {
   preset: "bigCircles", // also "big-circles" is accepted
 };
